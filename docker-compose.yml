@@ -1,14 +1,17 @@
-version: '3'
+version: '3.8'
 
 services:
 
   supermarket:
-
-    image: supermarket-app
-
-    build: .
-
+    image: supermarket-app:latest
     container_name: supermarket-container
-
     ports:
       - "80:80"
+    restart: always
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx-container
+    ports:
+      - "8081:80"
+    restart: always
