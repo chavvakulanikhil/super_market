@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+
+  supermarket:
+
+    image: supermarket-app
+
+    build: .
+
+    container_name: supermarket-container
+
+    ports:
+      - "80:80"
