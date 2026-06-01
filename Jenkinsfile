@@ -6,7 +6,7 @@ stages {
 
 stage('Clone') {
 steps {
-git 'https://github.com/YOUR_USERNAME/supermarket-project.git'
+git 'https://github.com/chavvakulanikhil/super_market.git'
 }
 }
 
